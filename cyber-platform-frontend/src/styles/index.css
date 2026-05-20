@@ -1,0 +1,57 @@
+/* src/styles/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* RTL Support */
+html {
+    direction: rtl;
+}
+
+body {
+    font-family: 'Cairo', 'Tajawal', sans-serif;
+    background-color: #0a0a1a;
+    color: #ffffff;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1a1a2e;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #00d4ff;
+    border-radius: 4px;
+}
+
+/* Cyber Theme Classes */
+@layer components {
+    .cyber-card {
+        @apply bg-gray-900 border border-cyan-500/20 rounded-xl p-6 
+               hover:border-cyan-400/50 transition-all duration-300
+               hover:shadow-lg hover:shadow-cyan-500/10;
+    }
+
+    .cyber-btn {
+        @apply bg-gradient-to-r from-cyan-500 to-blue-600 
+               text-white font-bold py-3 px-8 rounded-lg
+               hover:from-cyan-400 hover:to-blue-500 
+               transition-all duration-300 transform hover:scale-105;
+    }
+
+    .cyber-input {
+        @apply w-full bg-gray-800 border border-gray-600 rounded-lg 
+               px-4 py-3 text-white placeholder-gray-400
+               focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 
+               focus:outline-none transition-all;
+    }
+
+    .glow-text {
+        text-shadow: 0 0 10px rgba(0, 212, 255, 0.5),
+                     0 0 20px rgba(0, 212, 255, 0.3);
+    }
+}

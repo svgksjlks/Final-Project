@@ -1,0 +1,27 @@
+.assignments-page {
+  max-width: 1000px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+.assignments-title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.assignments-list {
+  display: grid;
+  gap: 20px;
+}
+
+.assignment-card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  text-align: right;
+}
+
+.assignment-card h2 {
+  margin-bottom: 10px;
+}
